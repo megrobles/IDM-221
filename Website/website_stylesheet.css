@@ -1,5 +1,8 @@
-body {
-	font-family: 'Open Sans', sans-serif;
+html{ font-size: 16px;}
+
+ body {
+	font-family: 'Gentium Basic', serif, 'Open Sans', sans-serif;
+	font-size: .75rem /*12px*/;
 }
 
 img { max-width: 100%; }
@@ -19,29 +22,48 @@ nav{text-align: center;}
 
 nav ul {
 	list-style: none;
-	margin: 0;
-	padding: 0;
 }
 
 nav ul li a{
 	color:rgb(35,60,116);
-	font-size: 2rem;
+	font-size: 2rem /*32px*/;
 	font-weight: normal;
+	text-decoration: none;
 }
 
-nav ul li a.hover,
+nav ul li a.hover {text-decoration: underline;}
 nav ul li a.active {
   color: rgb(134,134,134);
 }
 main{
+	font-size:.75rem /*12px*/;
 	padding: 4rem 0;
 }
 
+h1{
+	color: rgb(38,157,225);
+	font-size:2.5rem /*40px*/;
+	text-align: center;
+}
+
+h3{ 
+	font-size:1.5rem /*24px*/;
+	color: rgb(21,112,146);
+}
+
+h5{font-size: .875rem /*14px*/}
+
 .projects figcaption{
-	color: rgb(35,60,116);
-	font-size: 1.5rem;
+	color: rgb(38,157,225);
+	font-size: 1.5rem /*24px*/;
 	padding:1rem 0;
 	text-align: center;
+}
+
+.biocontent{
+	text-align: left;
+	line-height: 20px;
+	text-indent: 2em;
 }
 
 .contact article{text-align:center;}
@@ -54,14 +76,8 @@ figure{
 	margin-right: auto;
 }
 
-h1{
-	text-align: center;
-	color: rgb(37,41,78);
-}
-
-h3{ color: rgb(76,78,80);}
-
 .footer{
+	font-size:1rem /*16px*/;
 	padding-bottom: 2rem;
 	text-align: center;
 }
@@ -74,4 +90,5 @@ h3{ color: rgb(76,78,80);}
 
 footer ul li a{
 	color: rgb(134,134,134);
+	text-decoration: none;
 }
