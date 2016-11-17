@@ -1,6 +1,6 @@
-html{ font-size: 16px;}
+{box-sizing: border-box;}
 
- body {
+body {
 	font-family: 'Gentium Basic', serif, 'Open Sans', sans-serif;
 	font-size: .75rem /*12px*/;
 }
@@ -13,50 +13,42 @@ img { max-width: 100%; }
 	width: 100%;
 }
 
-.header_logo{
-	margin: 0 auto;
-	width: 100px;
+/* font/text aligment and sizing*/
+
+nav{
+	text-align: right;
 }
 
-nav{text-align: center;}
-
-nav ul {
+nav ul li{
+	display: inline-block;
 	list-style: none;
+	padding:0 .5rem;
 }
 
 nav ul li a{
-	color:rgb(35,60,116);
 	font-size: 2rem /*32px*/;
 	font-weight: normal;
+	padding: 0 8px;
 	text-decoration: none;
 }
 
-nav ul li a.hover {text-decoration: underline;}
-nav ul li a.active {
-  color: rgb(134,134,134);
-}
 main{
 	font-size:.75rem /*12px*/;
-	padding: 4rem 0;
+	padding: 2rem 0;
 }
 
-h1{
-	color: rgb(38,157,225);
-	font-size:2.5rem /*40px*/;
+h1{ font-size:2.5rem /*40px*/;
 	text-align: center;
+	padding: 1.5rem;
 }
 
-h3{ 
-	font-size:1.5rem /*24px*/;
-	color: rgb(21,112,146);
-}
+h3{ font-size:1.5rem /*24px*/;}
 
 h5{font-size: .875rem /*14px*/}
 
 .projects figcaption{
-	color: rgb(38,157,225);
 	font-size: 1.5rem /*24px*/;
-	padding:1rem 0;
+	padding:1rem;
 	text-align: center;
 }
 
@@ -64,17 +56,14 @@ h5{font-size: .875rem /*14px*/}
 	text-align: left;
 	line-height: 20px;
 	text-indent: 2em;
+	padding: 2rem;
+	width: 100%;
+	max-width: 900px;
 }
 
 .contact article{text-align:center;}
 
 article{text-align: left}
-
-figure{
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-}
 
 .footer{
 	font-size:1rem /*16px*/;
@@ -82,13 +71,113 @@ figure{
 	text-align: center;
 }
 
-.footer ul li {
-	list-style: none;
-	margin: 0;
-	padding: 0;
+footer ul li a{
+	text-decoration: none;
+	padding: 8px;
 }
 
-footer ul li a{
-	color: rgb(134,134,134);
-	text-decoration: none;
+
+
+/* color*/
+
+
+nav ul li a{
+	color:rgb(35,60,116);
 }
+
+nav ul li a.hover {
+	color: rgb(38,157,225);
+	text-decoration: underline;
+}
+
+nav ul li a.active {
+  color: rgb(134,134,134);
+}
+
+h1{color: rgb(38,157,225);}
+
+h3{ color: rgb(21,112,146);}
+
+.projects figcaption{color: rgb(38,157,225);}
+
+footer ul li a{color: rgb(134,134,134);}
+
+
+
+/*sizing and position*/
+
+.container {
+	margin: 0 auto;
+	max-width: 1400px;
+	width: 100%;
+}
+
+nav{
+	background-color: lightgray;
+	position:fixed;
+	top:0;
+	left:0;
+	height:4rem;
+	width:100%;
+}
+
+.header_logo{
+	padding: 4rem;
+}
+
+.projects{
+	padding:1rem;
+	margin:1.25rem;
+}
+
+.main_resume{
+	padding-left: 2rem;
+}
+
+.biopic{
+	float: left;
+	margin:30px 0 10px 20px;
+	padding: 0 20px;
+	width: 350px;
+}
+
+.gallery{padding:1.5rem;}
+
+.footer ul li {
+	display: inline-block;
+	list-style: none;
+	margin: 0;
+	padding: 1.5rem;
+}
+
+/*.catalog{
+	margin: 50px auto;
+	position: relative;
+	width: 240px;
+	padding: 10px;
+	box-shadow: 0 0 20px rgba(0,0,0,0.4);*/
+
+
+
+/* grid structure*/
+
+.col-halfs{ 
+	border: 1px solid lightgray;
+	padding: 0 1rem;
+	width: 50%; }
+
+.row{
+	clear: both;
+	margin-bottom:1rem;
+	overflow: auto;
+}
+
+.col-right {
+	float:right;
+}
+
+.col-left{
+	float: left;
+}
+
+
